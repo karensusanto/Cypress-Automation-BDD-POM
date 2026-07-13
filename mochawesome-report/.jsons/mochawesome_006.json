@@ -1,0 +1,92 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-07-13T15:44:10.114Z",
+    "end": "2026-07-13T15:44:10.200Z",
+    "duration": 86,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "eca27794-05e7-46ac-ba5a-f8b2e222020f",
+      "title": "",
+      "fullFile": "cypress/e2e/features/login.feature",
+      "file": "cypress/e2e/features/login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 80,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/login.feature/An uncaught error was detected outside of a test (failed).png\"\n    ]\n  ]\n}",
+          "code": "throw err;",
+          "err": {
+            "message": "Error: The following error originated from your test code, not from Cypress.\n\n  > This Cucumber Expression has a problem at column 122:\n\nuser fill in add user form using role {string}, status {string}, employee name {string}, username {string}, and password {password}\n                                                                                                                         ^--------^\nUndefined parameter type 'password'.\nPlease register a ParameterType for 'password'\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "Error: The following error originated from your test code, not from Cypress.\n\n  > This Cucumber Expression has a problem at column 122:\n\nuser fill in add user form using role {string}, status {string}, employee name {string}, username {string}, and password {password}\n                                                                                                                         ^--------^\nUndefined parameter type 'password'.\nPlease register a ParameterType for 'password'\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at createUndefinedParameterType (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:289:12)\n    at _CucumberExpression.rewriteParameter (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6674:19)\n    at _CucumberExpression.rewriteToRegex (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6640:27)\n    at eval (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6684:64)\n    at Array.map (<anonymous>)\n    at _CucumberExpression.rewriteExpression (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6684:44)\n    at _CucumberExpression.rewriteToRegex (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6642:27)\n    at new _CucumberExpression (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:6626:32)\n    at Registry.finalize (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:9263:29)\n    at createTests2 (http://localhost:54276/__cypress/tests?p=cypress/e2e/features/login.feature:12680:19)",
+            "diff": null
+          },
+          "uuid": "cf24e2ad-b63e-4f39-8e6f-ce84b6a5247d",
+          "parentUUID": "eca27794-05e7-46ac-ba5a-f8b2e222020f",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "cf24e2ad-b63e-4f39-8e6f-ce84b6a5247d"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 80,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report/.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
