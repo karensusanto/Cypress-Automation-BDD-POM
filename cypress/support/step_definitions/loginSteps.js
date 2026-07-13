@@ -16,6 +16,12 @@ When('clicks the login button', () => {
     loginPage.clickLoginBtn()
 })
 
-Then('user should see the dashboard page', () => {
-    cy.url().should('include','/dashboard')
+Then('user should see the login {string}', (outcome) => {
+    if(outcome == "success"){
+        cy.url().should('include','/dashboard')
+    }
+    else if(outcome == "failure"){
+        cy.url().should('include','')
+        cy.get('.oxd-alert').should('be.visible')
+    }
 })
