@@ -8,7 +8,7 @@
 - ./cypress.config.js -> cypress configuration with BDD setup
 - ./mochawesome-report/.jsons -> directory for generated report by mochawesome
 
-Flow:
+Flow:\
 Test scenarios in Gherkin format are written in feature files (./cypress/e2e/features/) **->** step definitions defines the action to take to do the scenarios (./cypress/support/step_definitions) **->** Using methods defined in POM, whose methods are how to interact with the page's components (./cypress/pages)
 
 ## Test Environment
