@@ -4,15 +4,30 @@
 [Dashboard](https://opensource-demo.orangehrmlive.com)
 
 ## Steps to run test
+1. Clone git repository
+2. Open terminal
+3. cd to directory
+4. Run the following command to install cypress and the dependencies
+```bash
+npm install
+```
+5. Run this command to run test in GUI
+```bash
+npx cypress open
+```
+6. Run this command to run test headless
 ```bash
 npx cypress run
 ```
 
 ## Result (Headless)
+1. Test: Add new user admin
 ![Add Admin Test Screenshot](./images/admin-feature.png)
 
+2. Test: Login with valid credential
 ![Login Test Screenshot](./images/login-feature.png)
 
+3. Test: Login with valid and invalid credentials (negative case)
 ![Login Test With Negative Screenshot](./images/login-feature-with-negative.png)
 
 ## What I've learned
