@@ -1,14 +1,14 @@
 # BDD + POM Cypress Automation
 
 ## Directories
-./cypress/e2e/features/ -> directory for feature files (Gherkin)
-./cypress/fixtures/ -> directory to store fixtures, static data used in testing for example, valid user credentials
-./cypress/pages -> directory for POM (Project Object Model) files
-./cypress/support/step_definitions -> directory for step definitions (Behavior Driven Development / BDD)
-./cypress.config.js -> cypress configuration with BDD setup
-./mochawesome-report/.jsons -> directory for generated report by mochawesome
+- ./cypress/e2e/features/ -> directory for feature files (Gherkin)
+- ./cypress/fixtures/ -> directory to store fixtures, static data used in testing for example, valid user credentials
+- ./cypress/pages -> directory for POM (Project Object Model) files
+- ./cypress/support/step_definitions -> directory for step definitions (Behavior Driven Development / BDD)
+- ./cypress.config.js -> cypress configuration with BDD setup
+- ./mochawesome-report/.jsons -> directory for generated report by mochawesome
 
-Test scenarios in Gherkin format are written in feature files (./cypress/e2e/features/) -> step definitions defines the action to take to do the scenarios (./cypress/support/step_definitions) -> Using methods defined in POM, whose methods are how to interact with the page's components (./cypress/pages)
+Test scenarios in Gherkin format are written in feature files (./cypress/e2e/features/) **->** step definitions defines the action to take to do the scenarios (./cypress/support/step_definitions) **->** Using methods defined in POM, whose methods are how to interact with the page's components (./cypress/pages)
 
 ## Test Environment
 [Dashboard](https://opensource-demo.orangehrmlive.com)
