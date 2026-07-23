@@ -1,9 +1,9 @@
 pipeline {
     agent any 
+    tools {
+        nodejs 'Node-26'
+    }
     stages {
-        tools {
-            nodejs 'Node-26'
-        }
         // Stage 1: Getting code or preparing environments
         stage('Checkout') {
             steps {
