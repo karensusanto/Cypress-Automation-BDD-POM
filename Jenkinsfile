@@ -35,7 +35,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'mochawesome-reports',
+                reportDir: 'mochawesome-report',
                 reportFiles: 'index.html',
                 reportName: 'Cypress Test Report',
                 reportTitles: 'E2E Regression Results'
